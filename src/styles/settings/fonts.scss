@@ -1,0 +1,16 @@
+/* ==========================================================================
+   FONTS / SETTINGS
+   ========================================================================== */
+/// Font family
+:root {
+    --font-primary: "Montserrat", sans-serif;
+
+    --font-size-content: #{typo(16px, 20px)};
+
+    /// Grosseur des textes
+    --font-size-h1: #{typo(30px, 54px)};
+    --font-size-h2: #{typo(30px, 64px)};
+    --font-size-h3: #{typo(18px, 24px)};
+    --font-size-h4: #{typo(22px, 32px)};
+    --font-size-h5: #{typo(32px, 48px)};
+}

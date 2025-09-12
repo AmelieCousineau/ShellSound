@@ -1,0 +1,25 @@
+.cta{
+    display: flex;
+    gap: 24px;
+    margin-top: 64px;
+}
+
+.appli .wrapper{
+    border-left: 1px solid var(--color-black);
+
+    .ligne{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 120px;
+
+        .contenu{
+            width: 85%;
+        }
+
+        .media img{
+            position: fixed;
+            top: 0;
+            z-index: -1;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.btn{
+    padding: 4px 16px;
+    border: 3px solid var(--color-primary);
+    color: var(--color-primary);
+    position: relative;
+    overflow: hidden;
+    display: block;
+    transition: all 0.3s ease-in;
+
+    .text_btn{
+        position: relative;
+        z-index: 10;
+    }
+
+    &::before{
+        content: "";
+        background-color: var(--color-primary);
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(100%);
+        transition: all 0.3s ease-in;
+    }
+    
+
+    &:hover{
+        color: var(--color-white);
+        text-decoration: none;
+
+        &::before{
+            transform: translateY(0);
+        }
+    }
+}
+
+.btn-lg{
+    padding: 16px 32px;
+    font-size: #{typo(24px, 32px)};
+    font-weight: 400;
+}
+
+.btn_appli{
+    color: var(--color-black);
+    padding: 8px 16px;
+    border: 3px solid var(--color-black);
+
+    .text_btn{
+        display: flex;
+        gap: 14px;
+        align-items: center;
+    }
+    
+    p{
+        font-size: #{typo(12px,15px)};
+        font-weight: 400;
+        line-height: 0.9;
+    }
+
+    span{
+        font-size: #{typo(20px,25px)};
+    }
+    
+    &::before{
+        background-color: var(--color-black);
+    }
+
+    &:hover{
+        color: var(--color-white);
+        text-decoration: none;  
+    }
+}
+
+.btn_soumettre{
+    border: none;
+    border-bottom: 3px var(--color-primary) solid;
+    font-weight: 400;
+}

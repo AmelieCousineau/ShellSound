@@ -1,0 +1,41 @@
+.spec {
+    background-color: var(--color-white);
+    
+    .wrapper{
+        border-left: 1px solid var(--color-black);
+
+        h3{
+            width: 55%;
+        }
+
+        p{
+            width: 65%;
+        }
+    }
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+
+    .stat{
+        
+
+        .top{
+            font-weight: 700;
+            font-size: #{typo(28px,36px)};
+            line-height: 0.9;
+            width: 100%;
+        }
+        
+        span{
+            font-size: #{typo(64px,128px)};
+        }
+
+        .bottom{
+            font-size: #{typo(12px,14px)};
+            width: 100%;
+        }
+    }
+}
