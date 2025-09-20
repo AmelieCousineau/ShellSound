@@ -5,32 +5,34 @@
     img{
         width: 100%;
         filter: brightness(60%);
+        transition: all 0.3s ease-in;
     }
 
     .contenu{
         display: flex;
         flex-direction: column;
+        justify-content: end;
         gap: 16px;
         position: absolute;
         bottom: 0;
         padding: 32px;
         color: var(--color-white);
+        height: 3%;
+        overflow: hidden;
+        transition: all 0.3s ease-in;
 
         span{
             font-weight: 700;
         }
     }
 
-    .commentaire, .stars{
-        display: none;
-    }
-
     &:hover{
         img{
-            filter: brightness(40%);
+            filter: brightness(30%);
         }
-        .commentaire, .stars{
-            display: block;
+
+        .contenu{
+            height: 100%;
         }
     }
 }
