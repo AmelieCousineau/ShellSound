@@ -6,4 +6,14 @@
     max-width: $breakpoint-lg;
     width: calc(100% - var(--spacing-xl));
     margin: 0 auto;
+
+    @media (max-width: $breakpoint-md) {
+        max-width: $breakpoint-md;
+        width: calc(100% - var(--spacing-lg));
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        max-width: $breakpoint-sm;
+        width: calc(100% - var(--spacing-md));
+    }
 }

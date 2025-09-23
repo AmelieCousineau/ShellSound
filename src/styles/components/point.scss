@@ -3,9 +3,22 @@
     flex-direction: column;
     gap: 24px;
     position: fixed;
+    z-index: 10;
     top: 50%;
-    left: var(--spacing-xl);
+    left: calc(var(--spacing-xl) / 2);
     transform: translateY(-50%);
+
+    @media (max-width: $breakpoint-lg) {
+        left: calc(var(--spacing-lg) / 2);
+    }
+
+    @media (max-width: $breakpoint-md) {
+        left: calc(var(--spacing-md) / 2);
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        display: none;
+    }
     
     .point{
         width: 14px;

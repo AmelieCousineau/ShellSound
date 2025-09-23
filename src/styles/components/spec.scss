@@ -6,10 +6,18 @@
 
         h3{
             width: 55%;
+
+            @media (max-width: $breakpoint-md) {
+                width: 100%;
+            }
         }
 
         p{
             width: 65%;
+
+            @media (max-width: $breakpoint-md) {
+                width: 100%;
+            }
         }
     }
 }
@@ -18,6 +26,17 @@
     display: flex;
     justify-content: space-between;
     margin-top: 64px;
+    width: 100%;
+
+    @media (max-width: $breakpoint-sm) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    @media (max-width: $breakpoint-xs) {
+        grid-template-columns: 1fr;
+    }
 
     .stat{
         

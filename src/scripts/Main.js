@@ -13,6 +13,8 @@ class Main {
 
     new ComponentFactory();
 
+    document.querySelector('.js-toggle').addEventListener('click', this.onToggleNav);
+
     // Pour gérer le clic des points
     document.querySelector(".point_hero").addEventListener('click', this.rendreActif);
     document.querySelector(".point_spec").addEventListener('click', this.rendreActif);
@@ -33,6 +35,10 @@ class Main {
     document.querySelector('.js-btnRouge').addEventListener('click', this.configRouge);
     document.querySelector('.js-btnMauve').addEventListener('click', this.configMauve);
     document.querySelector('.js-btnVert').addEventListener('click', this.configVert);
+  }
+
+  onToggleNav(){
+    document.querySelector('.header').classList.toggle('nav-is-active');
   }
 
   rendreActif(ev){

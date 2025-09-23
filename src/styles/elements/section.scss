@@ -8,6 +8,10 @@ section{
 
 .ligne{
     padding-left: 100px;
+
+    @media (max-width: 1200px) {
+        padding-left: 50px;     
+    }
 }
 
 ul{
