@@ -1,11 +1,11 @@
 {% include "_partials/_header.html" %}
 
 <div class="nav_right">
-    <a class="point point_hero" href="#hero"></a>
-    <a class="point point_spec" href="#spec"></a>
-    <a class="point point_config" href="#config"></a>
-    <a class="point point_avis" href="#avis"></a>
-    <a class="point point_appli" href="#appli"></a>
+    <a class="point point_hero js-point" href="#hero"></a>
+    <a class="point point_spec js-point" href="#spec"></a>
+    <a class="point point_config js-point" href="#config"></a>
+    <a class="point point_avis js-point" href="#avis"></a>
+    <a class="point point_appli js-point" href="#appli"></a>
 </div>
 
 <section class="hero js-section" id="hero">
@@ -85,10 +85,11 @@
     </div>
 </section>
 
-<!-- <section class="config js-section" id="config">
+<section class="config js-section" id="config">
     <div class="wrapper">
         <div class="ligne">
             <h2>Adaptez-le à votre décor</h2>
+
             <div class="grid-2">
                 <img class="js-configImg1" src="assets/images/bleuGlacial1.jpg" alt="">
                 <img class="js-configImg2" src="assets/images/bleuGlacial2.jpg" alt="">
@@ -101,10 +102,10 @@
                     <div class="option">
                         <p class="couleur_titre js-titleColor">Bleu glacial</p>
                         <div class="couleurs">
-                            <div class="couleur bleu actif js-btnCouleur js-btnBleu"></div>
-                            <div class="couleur rouge js-btnCouleur js-btnRouge"></div>
-                            <div class="couleur mauve js-btnCouleur js-btnMauve"></div>
-                            <div class="couleur vert js-btnCouleur js-btnVert"></div>
+                            <div class="couleur bleu actif js-btnCouleur js-btnBleu" data-color="bleuGlacial"></div>
+                            <div class="couleur rouge js-btnCouleur js-btnRouge" data-color="rougeSaumon"></div>
+                            <div class="couleur mauve js-btnCouleur js-btnMauve" data-color="lavande"></div>
+                            <div class="couleur vert js-btnCouleur js-btnVert" data-color="vertPastel"></div>
                         </div>
                     </div>
                     <div class="option prix">179,99$</div>
@@ -113,7 +114,7 @@
             </div>
         </div>
     </div>
-</section> -->
+</section>
 
 <!-- <section class="avis js-section" id="avis">
     <div class="wrapper">
