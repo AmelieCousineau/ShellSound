@@ -1,11 +1,13 @@
 // importer vos composantes ici
 import Carousel from "./components/Carousel";
+import Header from "./components/Header";
 
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
     this.componentList = {
       Carousel,
+      Header,
     };
     this.init();
   }

@@ -13,8 +13,6 @@ class Main {
 
     new ComponentFactory();
 
-    document.querySelector('.js-toggle').addEventListener('click', this.onToggleNav);
-
     // Pour gérer le clic des points
     const points = document.querySelectorAll('.js-point');
     for(let i=0; i<points.length; i++){
@@ -37,10 +35,6 @@ class Main {
       const btnColor = btnColors[i];
       btnColor.addEventListener('click', this.changeColor);
     }
-  }
-
-  onToggleNav(){
-    document.querySelector('.header').classList.toggle('nav-is-active');
   }
 
   rendreActif(ev){
