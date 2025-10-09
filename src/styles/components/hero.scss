@@ -134,6 +134,10 @@
     align-items: center;
     width: 1px;
 
+    @media (max-width: $breakpoint-sm) {
+        display: none;    
+    }
+
     .textLigne{
         font-size: typo(15px);
         transform: rotate(-90deg);

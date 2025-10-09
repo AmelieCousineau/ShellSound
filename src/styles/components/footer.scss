@@ -52,6 +52,16 @@
         }
 
     }
+
+    @media (max-width: $breakpoint-md){
+        h4{
+            width: 100%;
+        }
+
+        .input__element{
+            width: 80%;
+        }
+    }
 }
 
 .foot{
@@ -93,6 +103,10 @@
     width: 1px;
     height: 35vh;
 
+    @media (max-width: $breakpoint-sm) {
+        display: none;    
+    }
+
 
     .textLigne{
         font-size: typo(15px);
@@ -110,5 +124,19 @@
         width: 1rem;
         height: 2.5rem;
         transform: rotate(180deg);
+    }
+}
+
+.foot__nav{
+    @media (max-width: 1200px) {
+        display: block;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        ul{
+            flex-direction: column;
+            align-items: start;
+            gap: 16px;
+        }
     }
 }

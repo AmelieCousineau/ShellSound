@@ -17,7 +17,7 @@
         bottom: 0;
         padding: 32px;
         color: var(--color-white);
-        height: 3%;
+        height: 2.5%;
         overflow: hidden;
         transition: all 0.3s ease-in;
 
@@ -33,6 +33,21 @@
 
         .contenu{
             height: 100%;
+        }
+    }
+
+    @media (max-width: $breakpoint-md) {
+        .contenu{
+            height: 100%; 
+        }
+        
+        img{
+            filter: brightness(30%);
+        }
+
+        svg{
+            width: 1.5em;
+            height: 1.5em;
         }
     }
 }

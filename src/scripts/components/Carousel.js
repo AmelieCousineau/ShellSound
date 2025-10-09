@@ -32,13 +32,16 @@ export default class Carousel {
         0: {
           slidesPerView: 1,
         },
-        510: {
+        530: {
+          slidesPerView: 1.5,
+        },
+        885: {
           slidesPerView: 2,
         },
-        768: {
-          slidesPerView: 2.5,
-        },
         1024: {
+          slidesPerView: 2,
+        },
+        1440:{
           slidesPerView: this.element.dataset.slides,
         },
       };

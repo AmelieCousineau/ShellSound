@@ -12,6 +12,10 @@ section{
     @media (max-width: 1200px) {
         padding-left: 50px;     
     }
+
+    @media (max-width: $breakpoint-sm) {
+        padding-left: 0;     
+    }
 }
 
 ul{

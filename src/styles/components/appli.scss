@@ -7,6 +7,10 @@
 .appli .wrapper{
     border-left: 1px solid var(--color-black);
 
+    @media (max-width: $breakpoint-sm) {
+        border: none;     
+    }
+
     .ligne{
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -20,6 +24,41 @@
             position: fixed;
             top: 0;
             z-index: -1;
+        }
+
+        @media (max-width: 1200px) {
+            display: block;
+            width: 75%;
+
+            .media img{
+                right: 0;
+            }
+        }
+
+        @media (max-width: 950px){
+            width: 60%;
+        }
+
+        @media (max-width: 840px){
+            width: 100%;
+            
+            .media::after{
+                content: "";
+                display: block;
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba($color: #f2f5f8, $alpha: 0.8);
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: -1;
+            }
+        }
+
+        @media (max-width: $breakpoint-sm){
+            .media{
+                display: none;
+            }
         }
     }
 }
