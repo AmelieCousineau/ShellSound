@@ -8,7 +8,7 @@
     left: calc(var(--spacing-xl) / 2);
     transform: translateY(-50%);
 
-    @media (max-width: $breakpoint-lg) {
+    @media (max-width: 1800px) {
         left: calc(var(--spacing-lg) / 2);
     }
 
