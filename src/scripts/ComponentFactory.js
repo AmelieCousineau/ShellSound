@@ -2,6 +2,8 @@
 import Carousel from "./components/Carousel";
 import Header from "./components/Header";
 import Scrolly from "./components/Scrolly";
+import Points from "./components/Points";
+import ChangeColor from "./components/ChangeColor";
 
 export default class ComponentFactory {
   constructor() {
@@ -10,6 +12,8 @@ export default class ComponentFactory {
       Carousel,
       Header,
       Scrolly,
+      Points,
+      ChangeColor,
     };
     this.init();
   }
